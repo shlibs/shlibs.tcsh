@@ -20,6 +20,6 @@ if ( -d "$dir" ) then
                 ls "$dir"
     endif
 else
-      printf "%s\n" "'$dir' is not a directory"
+      printf "%s\n" "'$dir' is not a directory."
 endif
 # dir.list.tcsh EOF
