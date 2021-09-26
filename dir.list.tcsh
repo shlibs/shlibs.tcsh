@@ -1,10 +1,15 @@
 #!/usr/bin/env /usr/bin/tcsh
+#!/usr/bin/env -vS /usr/bin/tcsh
+# references:
+# http://merlot.usc.edu/cs353-s21/tcsh.html
 #Test arguments
 if ($#argv != 1) then
   printf "%s\n" "'$0' usage: $0 directoryname"
   exit 1
 endif
-
+# mkdir testdir
+# touch testdir/empty.{e..t}.file
+#Ensure argument is a directory
 #Ensure argument is a directory
 set dir="$1"
 set c=0
