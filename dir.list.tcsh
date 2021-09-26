@@ -1,5 +1,4 @@
 #!/usr/bin/env /usr/bin/tcsh
-
 #Test arguments
 if ($#argv != 1) then
   printf "%s\n" "'$0' usage: $0 directoryname"
