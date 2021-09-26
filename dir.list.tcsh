@@ -2,7 +2,7 @@
 
 #Test arguments
 if ($#argv != 1) then
-  printf "%s\n" "$0 usage: $0 directoryname"
+  printf "%s\n" "'$0' usage: $0 directoryname"
   exit 1
 endif
 
@@ -11,7 +11,7 @@ set dir="$1"
 set c=0
 # make sure $dir exits
 if ( -d "$dir" ) then
-    set c="$(ls -a "$dir" | wc | awk '{print $1}')"
+    set c="`ls -a "$dir" | wc | awk '{print $1}'`"
    # IS dir is empty
     if ( "$c" == 2 ) then
                 printf "%s\n" "Empty directory - $dir"
