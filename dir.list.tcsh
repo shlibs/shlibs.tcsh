@@ -1,5 +1,7 @@
 #!/usr/bin/env /usr/bin/tcsh
 #!/usr/bin/env -vS /usr/bin/tcsh
+# mkdir testdir
+# touch testdir/empty.{e..t}.file
 # references:
 # https://www.ibm.com/support/knowledgecenter/en/ssw_aix_72/com.ibm.aix.osdevice/avail_shells.htm
 # https://developer.ibm.com/articles/au-tcsh/
@@ -10,8 +12,6 @@ if ($#argv != 1) then
 printf "%s\n" "'$0' usage: $0 directoryname"
 exit 1
 endif
-# mkdir testdir
-# touch testdir/empty.{e..t}.file
 # ensure argument is a directory
 set dir="$1"
 set c=0
