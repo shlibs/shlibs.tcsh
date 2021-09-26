@@ -4,7 +4,7 @@
 # https://www.ibm.com/support/knowledgecenter/en/ssw_aix_72/com.ibm.aix.osdevice/avail_shells.htm
 # https://developer.ibm.com/articles/au-tcsh/
 # https://developer.ibm.com/tutorials/l-linux-shells/
-# http://merlot.usc.edu/cs353-s21/tcsh.html
+# https://merlot.usc.edu/cs353-s21/tcsh.html
 # test arguments
 if ($#argv != 1) then
 printf "%s\n" "'$0' usage: $0 directoryname"
