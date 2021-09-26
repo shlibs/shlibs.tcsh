@@ -10,7 +10,6 @@ endif
 # mkdir testdir
 # touch testdir/empty.{e..t}.file
 #Ensure argument is a directory
-#Ensure argument is a directory
 set dir="$1"
 set c=0
 # make sure $dir exits
@@ -18,9 +17,9 @@ if ( -d "$dir" ) then
 set c="`ls -a "$dir" | wc -l`"
 # IS dir is empty
 if ( "$c" == 2 ) then
-printf "%s\n" "Directory '$dir' is an empty directory."
+printf "%s\n" "'$dir' is empty."
 else        #dir has files
-printf "%s\n" "List file names for directory '$dir':"
+printf "%s\n" "List file names for '$dir':"
 ls "$dir"
 endif
 else
