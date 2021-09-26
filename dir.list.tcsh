@@ -2,7 +2,7 @@
 
 #Test arguments
 if ($#argv != 1) then
-  printf "%s\n" "Usage: $0 directoryname"
+  printf "%s\n" "$0 usage: $0 directoryname"
   exit 1
 endif
 
