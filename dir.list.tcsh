@@ -1,4 +1,4 @@
-#!/usr/bin/env tcsh
+#!/usr/bin/env /usr/bin/tcsh
 
 #Test arguments
 if ($#argv != 1) then
