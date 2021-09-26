@@ -14,7 +14,7 @@ if ( -d "$dir" ) then
     set c="`ls -a "$dir" | wc -l`"
    # IS dir is empty
     if ( "$c" == 2 ) then
-                printf "%s\n" "Directory $dir is empty directory."
+                printf "%s\n" "Directory '$dir' is empty directory."
     else        #dir has files
                 printf "%s\n" "List file names for directory '$dir':"
                 ls "$dir"
