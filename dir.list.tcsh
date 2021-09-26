@@ -26,4 +26,4 @@ if ( -d "$dir" ) then
 else
       printf "%s\n" "'$dir' is not a directory."
 endif
-# dir.list.tcsh EOF
+# shlibs/shlibs.tcsh/dir.list.tcsh EOF
